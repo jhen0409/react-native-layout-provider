@@ -1,0 +1,14 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "settings": {
+    "import/core-modules": ["react-native"],
+  },
+  "rules": {
+    "semi": ["error", "never"]
+  }
+}
