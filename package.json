@@ -12,6 +12,15 @@
     "test": "mocha --recursive --compilers js:babel-core/register -r test/setup test/**/*.spec.js",
     "prepublish": "npm run lint && npm run test"
   },
+  "homepage": "https://github.com/jhen0409/react-native-layout-provider",
+  "repository": "https://github.com/jhen0409/react-native-layout-provider",
+  "keywords": [
+    "react",
+    "react-native",
+    "layout",
+    "provider",
+    "layout-tester"
+  ],
   "author": "Jhen <developer@jhen.me>",
   "license": "MIT",
   "devDependencies": {
