@@ -6,7 +6,7 @@
     "node": true
   },
   "settings": {
-    "import/core-modules": ["react-native"],
+    "import/core-modules": ["react-native"]
   },
   "rules": {
     "semi": ["error", "never"]

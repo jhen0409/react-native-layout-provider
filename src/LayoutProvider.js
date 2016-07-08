@@ -1,5 +1,5 @@
 import { Component, PropTypes, Children } from 'react'
-import { Dimensions } from 'react-native' // eslint-disable-line
+import { Dimensions } from 'react-native'
 import shallowEqual from 'shallowequal'
 
 const {
