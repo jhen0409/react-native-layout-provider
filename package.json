@@ -36,7 +36,7 @@
     "expect": "^1.20.2",
     "mocha": "^2.5.3",
     "react": "15.1.0",
-    "react-dom": "^15.2.0",
+    "react-dom": "15.1.0",
     "react-native-mock": "^0.2.4",
     "spy-react-component-lifecycle": "github:jhen0409/spy-react-component-lifecycle"
   },
