@@ -1,4 +1,4 @@
-# React Native Layout Provider
+# React Native Layout Provider [![Build Status](https://travis-ci.org/jhen0409/react-native-layout-provider.svg?branch=master)](https://travis-ci.org/jhen0409/react-native-layout-provider)
 
 Getting layout size by top provider instead of `Dimensions`. This is split from [react-native-layout-tester](https://github.com/machadogj/react-native-layout-tester)'s context & `getLayout` decorator. Inspired by Provider / connect of [react-redux](https://github.com/reactjs/react-redux).
 
@@ -69,7 +69,7 @@ Or use [babel-plugin-transform-decorators-legacy](https://github.com/loganfsmyth
 
 ## Advanced example
 
-Use `react-native-orientation` to get / listen orientation, and `react-native-extra-dimensions-android` to resolved status bar problem for Android.
+Use [react-native-orientation](https://github.com/yamill/react-native-orientation) to get / listen orientation, and [react-native-extra-dimensions-android](https://github.com/jaysoo/react-native-extra-dimensions-android) to resolved status bar problem for Android.
 
 ```js
 import React, { Component, PropTypes } from "react";
