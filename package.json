@@ -1,6 +1,6 @@
 {
   "name": "react-native-layout-provider",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Getting layout size by top provider instead of Dimensions",
   "main": "src/index.js",
   "files": [
