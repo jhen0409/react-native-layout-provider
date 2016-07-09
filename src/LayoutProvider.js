@@ -55,7 +55,11 @@ export default class LayoutProvider extends Component {
   }
 
   setLayoutState({ label, width, height, portrait }, callback) {
-    const state = { label, width, height, portrait }
+    const state = {
+      label,
+      viewport: { width, height },
+      portrait,
+    }
     if (!this.state) {
       this.state = state
     } else {
@@ -64,8 +68,12 @@ export default class LayoutProvider extends Component {
   }
 
   getLayoutState() {
-    const { label, width, height, portrait } = this.state
-    return { label, width, height, portrait }
+    const { label, viewport: { width, height }, portrait } = this.state
+    return {
+      label,
+      viewport: { width, height },
+      portrait,
+    }
   }
 
   subscribeLayout(listener) {

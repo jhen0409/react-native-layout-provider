@@ -8,8 +8,10 @@ import spyLifeCycle from 'spy-react-component-lifecycle'
 
 const defaultState = {
   label: 'Default',
-  width: 320,
-  height: 768,
+  viewport: {
+    width: 320,
+    height: 768,
+  },
   portrait: undefined,
 }
 
@@ -64,12 +66,17 @@ describe('Wrap component with getLayout decorator', () => {
 
     layoutWrapper.setProps({
       label: 'iPhone6',
+      height: 100,
       portrait: false,
     })
     expect(wrapper.instance().mergedProps).toEqual({
       ...defaultState,
       a: 1,
       label: 'iPhone6',
+      viewport: {
+        ...defaultState.viewport,
+        height: 100,
+      },
       portrait: false,
     })
     expect(Wrap.prototype.render.callCount).toBe(2)

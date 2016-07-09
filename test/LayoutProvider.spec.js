@@ -7,8 +7,10 @@ import spyLifeCycle from 'spy-react-component-lifecycle'
 
 const defaultState = {
   label: 'Default',
-  width: 320,
-  height: 768,
+  viewport: {
+    width: 320,
+    height: 768,
+  },
   portrait: undefined,
 }
 

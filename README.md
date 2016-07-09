@@ -47,8 +47,10 @@ import { getLayout } from 'react-native-layout-provider';
 class Comp extends Component {
   static propTypes = {
     label: PropTypes.string.isRequired,
-    width: PropTypes.number.isRequired,
-    height: PropTypes.number.isRequired,
+    viewport: PropTypes.shape({
+      width: PropTypes.number.isRequired,
+      height: PropTypes.number.isRequired,
+    }).isRequired,
     portrait: PropTypes.boolean,
   };
 
@@ -59,8 +61,10 @@ class Comp extends Component {
 
 export default getLayout(layout => ({
   label: layout.label,
-  width: layout.width,
-  height: layout.height,
+  viewport: {
+    width: layout.viewport.width,
+    height: layout.viewport.height,
+  },
   portrait: layout.portrait,
 }))(Comp);
 ```
