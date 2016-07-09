@@ -1,6 +1,6 @@
 {
   "name": "react-native-layout-provider",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Getting layout size by top provider instead of Dimensions",
   "main": "src/index.js",
   "files": [
@@ -38,7 +38,7 @@
     "react": "15.1.0",
     "react-dom": "15.1.0",
     "react-native-mock": "^0.2.4",
-    "spy-react-component-lifecycle": "github:jhen0409/spy-react-component-lifecycle"
+    "spy-react-component-lifecycle": "^0.2.0"
   },
   "dependencies": {
     "hoist-non-react-statics": "^1.2.0",
