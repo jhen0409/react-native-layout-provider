@@ -42,16 +42,18 @@ And use `getLayout` for each component, the component props will update when Lay
 
 ```js
 import React, { Component, PropTypes } from 'react';
-import { getLayout } from 'react-native-layout-provider';
+import { getLayout, defaultLayoutTypes } from 'react-native-layout-provider';
 
 class Comp extends Component {
+
+  // It's same with defaultLayoutTypes
   static propTypes = {
     label: PropTypes.string.isRequired,
     viewport: PropTypes.shape({
       width: PropTypes.number.isRequired,
       height: PropTypes.number.isRequired,
     }).isRequired,
-    portrait: PropTypes.boolean,
+    portrait: PropTypes.bool,
   };
 
   render() {

@@ -3,6 +3,7 @@ import { View } from 'react-native'
 import { mount } from 'enzyme'
 import LayoutProvider from '../src/LayoutProvider'
 import getLayout from '../src/getLayout'
+import defaultLayoutTypes from '../src/defaultLayoutTypes'
 import expect from 'expect'
 import spyLifeCycle from 'spy-react-component-lifecycle'
 
@@ -17,6 +18,8 @@ const defaultState = {
 
 const TestComponent = () =>
   <View />
+
+TestComponent.propTypes = defaultLayoutTypes
 
 describe('Wrap component with getLayout decorator', () => {
   it('should get right props on Component', () => {
