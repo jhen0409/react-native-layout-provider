@@ -1,4 +1,5 @@
-import { Component, PropTypes, Children } from 'react'
+import { Component, Children } from 'react'
+import { PropTypes } from 'prop-types'
 import { Dimensions } from 'react-native'
 import shallowEqual from 'shallowequal'
 
