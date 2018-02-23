@@ -1,4 +1,5 @@
-import { Component, PropTypes, createElement } from 'react'
+import { Component, createElement } from 'react'
+import { PropTypes } from 'prop-types'
 import shallowEqual from 'shallowequal'
 import hoistStatics from 'hoist-non-react-statics'
 
