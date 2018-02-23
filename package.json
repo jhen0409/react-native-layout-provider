@@ -3,9 +3,7 @@
   "version": "1.1.0",
   "description": "Getting layout size by top provider instead of Dimensions",
   "main": "src/index.js",
-  "files": [
-    "src"
-  ],
+  "files": ["src"],
   "scripts": {
     "lint": "eslint src test",
     "pretest": "mkdir -p node_modules/react-native && touch node_modules/react-native/index.js",
@@ -14,13 +12,7 @@
   },
   "homepage": "https://github.com/jhen0409/react-native-layout-provider",
   "repository": "https://github.com/jhen0409/react-native-layout-provider",
-  "keywords": [
-    "react",
-    "react-native",
-    "layout",
-    "provider",
-    "layout-tester"
-  ],
+  "keywords": ["react", "react-native", "layout", "provider", "layout-tester"],
   "author": "Jhen <developer@jhen.me>",
   "license": "MIT",
   "devDependencies": {
@@ -34,10 +26,11 @@
     "eslint-plugin-jsx-a11y": "^1.5.5",
     "eslint-plugin-react": "^5.2.2",
     "expect": "^1.20.2",
+    "jsdom": "^9.0.0",
     "mocha": "^2.5.3",
     "react": "15.1.0",
     "react-dom": "15.1.0",
-    "react-native-mock": "^0.2.4",
+    "react-native-mock": "0.2.4",
     "spy-react-component-lifecycle": "^0.2.0"
   },
   "dependencies": {
